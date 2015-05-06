@@ -2,46 +2,46 @@
 <items version="2" >
 
     <item
-        jar="/home/chris/Desktop/Beach/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="/home/chris/Desktop/Beach/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-816940706120a99ba28fe34ceb934355db91fc99.jar" />
-    </item>
-    <item
-        jar="/home/chris/Desktop/Beach/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/classes.jar"
+        jar="/home/chris/Desktop/AndroidBaseClientApi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="/home/chris/Desktop/Beach/app/build/intermediates/pre-dexed/debug/classes-81dfff4207b1fba111d45c6a8dfb12d8e38a56b1.jar" />
+        <dex dex="/home/chris/Desktop/AndroidBaseClientApi/app/build/intermediates/pre-dexed/debug/classes-f5b5727bc7750ea77ce7804bbd653e9a7d201661.jar" />
+    </item>
+    <item
+        jar="/home/chris/Desktop/AndroidBaseClientApi/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/home/chris/Desktop/AndroidBaseClientApi/app/build/intermediates/pre-dexed/debug/classes-8ec20586751554e2ce34161606301110d7fd7652.jar" />
+    </item>
+    <item
+        jar="/home/chris/Desktop/AndroidBaseClientApi/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/home/chris/Desktop/AndroidBaseClientApi/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-2825f2bbbad14387ba4a2b512551d40f6c85ad4a.jar" />
     </item>
     <item
         jar="/home/chris/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
-        <dex dex="/home/chris/Desktop/Beach/app/build/intermediates/pre-dexed/debug/gson-2.3-233c1ef817fd9eaf0f2179082f68d2c8c28dceb1.jar" />
+        <dex dex="/home/chris/Desktop/AndroidBaseClientApi/app/build/intermediates/pre-dexed/debug/gson-2.3-233c1ef817fd9eaf0f2179082f68d2c8c28dceb1.jar" />
     </item>
     <item
         jar="/home/chris/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="/home/chris/Desktop/Beach/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-43d193d9e9024f54f8170ef595ae28d95f32ad2b.jar" />
-    </item>
-    <item
-        jar="/home/chris/Desktop/Beach/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="/home/chris/Desktop/Beach/app/build/intermediates/pre-dexed/debug/classes-9da2d5b640c3c53c96813df6f77251ef8a67f052.jar" />
+        <dex dex="/home/chris/Desktop/AndroidBaseClientApi/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-43d193d9e9024f54f8170ef595ae28d95f32ad2b.jar" />
     </item>
     <item
         jar="/home/chris/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.15/9093a362d18c5f81f58e49d86dece57d9b6e1cb7/library-1.0.15.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="9093a362d18c5f81f58e49d86dece57d9b6e1cb7">
-        <dex dex="/home/chris/Desktop/Beach/app/build/intermediates/pre-dexed/debug/library-1.0.15-1fe21776aed863a5dfaa777f8b3f1193eaa3424f.jar" />
+        <dex dex="/home/chris/Desktop/AndroidBaseClientApi/app/build/intermediates/pre-dexed/debug/library-1.0.15-1fe21776aed863a5dfaa777f8b3f1193eaa3424f.jar" />
     </item>
 
 </items>

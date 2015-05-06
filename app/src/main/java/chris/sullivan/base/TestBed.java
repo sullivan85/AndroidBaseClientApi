@@ -22,30 +22,12 @@ public class TestBed extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_bed);
 
-        final WebView wv = (WebView) findViewById(R.id.text);
-        WebUtils.enableUrlLoading( wv );
-        WebUtils.enableJavascript( wv );
+        CacheUtil.getInstance( getBaseContext() ).save( "george.json",
+                "{ \"Name\": \"Chris\", \"Age\": 29 }" );
 
+        String cachedJson = CacheUtil.getInstance( getBaseContext() ).read( "george.json" );
 
-        final String url = "https://www.google.com/";
-
-        VolleyApi.getInstance()._getUrl(getBaseContext(), url, new SpikeListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-            }
-
-            @Override
-            public void onResponse(String response) {
-                String encoded = WebUtils.encodeForWebView(response);
-                wv.loadData(encoded, "text/html; charset=UTF-8", "base64");
-                Toast.makeText(getBaseContext(), response, Toast.LENGTH_LONG).show();
-            }
-        });
-
-        boolean cacheHasFile = CacheUtil.getInstance(getBaseContext()).contains("cache");
-
-        Toast.makeText( getBaseContext(), cacheHasFile + "", Toast.LENGTH_LONG).show();
+        Toast.makeText( getBaseContext(), cachedJson, Toast.LENGTH_LONG ).show();
     }
 
 

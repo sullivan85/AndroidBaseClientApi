@@ -4,6 +4,10 @@ import android.content.Context;
 import android.util.Log;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  * Created by chris on 5/6/15.
@@ -34,6 +38,8 @@ public class CacheUtil {
         // singleton
         cacheDir = mContext.getCacheDir();
     }
+
+    /* Commonly used operations **/
 
     public boolean clearCache()
     {
@@ -82,6 +88,80 @@ public class CacheUtil {
         }
 
         return file.getName().equalsIgnoreCase( name );
+    }
+
+    public boolean delete( String name )
+    {
+        return clearCache( new File( cacheDir, name ) );
+    }
+
+    public String read( String name )
+    {
+        return read( new File( cacheDir, name ) );
+    }
+
+    public String read( File file )
+    {
+        FileInputStream fis = null;
+        try
+        {
+            fis = new FileInputStream( file );
+
+            byte[] byteData = new byte[fis.available()];
+            fis.read( byteData );
+
+            return new String( byteData );
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally
+        {
+            try
+            {
+                if( fis != null )
+                    fis.close();
+            }
+            catch( IOException e )
+            {
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
+
+    public boolean save( String name, String data )
+    {
+        return save(new File(cacheDir, name), data);
+    }
+
+    public boolean save( File file, String data )
+    {
+        try
+        {
+            // if file wasn't created yet, make one
+            if( !file.exists() )
+            {
+                file.createNewFile();
+            }
+
+            FileOutputStream fos = new FileOutputStream( file );
+            byte[] byteData = data.getBytes();
+
+            // write data
+            fos.write( byteData );
+
+            // immediately clear buffer onto file
+            fos.flush();
+            fos.close();
+            return true;
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
 
