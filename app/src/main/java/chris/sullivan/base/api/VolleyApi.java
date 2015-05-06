@@ -22,12 +22,6 @@ import java.lang.reflect.Type;
  */
 public class VolleyApi {
 
-    public static class RequestType
-    {
-        public static final int String = 0;
-        public static final int Json = 1;
-    }
-
     public static VolleyApi getInstance()
     {
         if(api == null) api = new VolleyApi();
